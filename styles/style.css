@@ -34,9 +34,9 @@ html,body {
 	opacity: .40;
 }
 #left{
-background-image: url(fondo2.png);	
+background-image: url(../img/fondo1.png);	
 }
 #rigth{
-	background-image: url(fondo2.png);
+	background-image:url(../img/fondo2.png);
 }
 
