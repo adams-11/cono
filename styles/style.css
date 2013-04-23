@@ -1,42 +1,143 @@
-@charset "utf-8";
-/**
-http://jigsaw.w3.org/css-validator/
-http://www.w3.org/TR/WCAG10-CSS-TECHS/
-http://www.colorzilla.com/gradient-editor/
-http://gradients.glrzad.com/
-
-**codigo para centrar**
-http://jsfiddle.net/CatChen/VGpdv/4/
-
-***documentacion del uso de class(.) and id(#)***
-http://www.tizag.com/cssT/cssid.php
-*/
-*{
-	padding:0;
-	margin: 0 auto;	
-}
-html,body {
-	background: linear-gradient(#5b1715,#a31e1a);
-	background-repeat: no-repeat;
-			
-}
-#header{	
-	width: 1024px;
-	height: 310px;	
-}
-/**background left and rigth*/
-.bg{
-	position: absolute;
-	top: 828px;
-	margin-left: 814px;
-	width: 449px;
-	height: 504px;
-	opacity: .40;
-}
-#left{
-background-image: url(../img/fondo1.png);	
-}
-#rigth{
-	background-image:url(../img/fondo2.png);
+body {
+	background-color:#651816;
 }
 
+.contenedorGeneral{
+	
+	overflow:hidden;
+	width:960px;
+	margin:auto;
+}
+
+.encabezado{
+	background: url(../img/botones/fondocarne.jpg);
+	
+	
+}
+
+.contenido{
+	background:  url(../img/botones/fondoblanco.png);
+	padding-bottom: 500px;
+	margin-top: 15px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+.menu{
+	
+	background:  url(../img/botones/fondocarne.jpg);
+	height: 55px;
+	margin-left: -60px;
+	margin-right: -60px;
+	
+	
+	}
+	
+	.menu li {/*aqui se agrego el padding para mover la imagen del boton*/
+	
+	float: left;
+	height: 50px;
+	width: 15px;
+	margin-left:60px;
+	margin-right:60px;
+	padding-left:70px;
+	list-style:none;
+}
+
+
+
+.conocenos{
+	height: 50px;
+	width: 120px;
+	background-image: url(../img/botones/conocenos.gif);
+	background-position: center bottom;
+	display: block;
+	text-indent:-9999px;
+	overflow: hidden;
+	padding-left:30px;
+	margin-left: 70px;	
+	}
+	
+.menuu{
+	height: 50px;
+	width: 180px;
+	background-image:url(../img/botones/menu.gif);
+	background-position: center bottom;
+	display: block;
+	text-indent:-9999px;
+	overflow: hidden;
+	margin-left: 40px;
+	}
+	
+.contactanos{
+	height: 48px;
+	width: 110px;
+	background-image: url(../img/botones/contactanos.gif);
+	background-position: center bottom;
+	display: block;
+	text-indent:-9999px;
+	overflow: hidden;
+	margin-left: 50px;
+	
+	}
+	
+.sugerencias{
+	height: 50px;
+	width: 226px;
+	display: block;
+	text-indent:-9999px;
+	overflow: hidden;
+	margin-right:330px;
+	background:  url(../img/botones/sugerencia.gif) no-repeat center bottom;	
+	}
+	
+.sugerencias:hover, .conocenos:hover, .menuu:hover, .contactanos:hover{
+	background-position: center -1px;
+	}
+
+.contactanos:hover{
+	height: 65px;
+	width: 120px;
+	top:460px;
+	
+}
+
+.conocenos:hover{
+	height: 65px;
+	width: 120px;
+	top:700px;
+}
+
+.menuu:hover{
+	height: 65px;
+	width: 160px;
+	top:700px;
+}
+
+.sugerencias:hover{
+	height: 65px;
+	width: 220px;
+	top:700px;
+}
+
+.titulo .h1{
+	text-align: center;
+	font-family:Snap ITC; 
+	color:#65c8e8;	
+}
+
+.foto{
+		text-align: justify;
+		margin-left: 10px;
+		margin-right:10px;
+		color:white;
+		font-family:Snap ITC; 
+		text-outline: 10px;
+	
+}
+.flotadoizq{
+	float:right;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+
+	}
