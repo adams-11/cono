@@ -1,143 +1,213 @@
+@charset "utf-8";
+
+@font-face
+ {
+ font-family: Snap;
+ src:url(../fonts/snap.otf),url(../fonts/snap.eot),url(../fonts/snap.ttf),url(../fonts/snap.svg);
+/* src: url('Sansation_Light.ttf'),
+      url('Sansation_Light.eot'); /* IE9 */
+} 
+/*
+@font-face {
+	font-family: "Chalet";
+	font-style: normal;
+	font-weight: normal;
+	src:url(../font/Chalet.eot);
+	src:url(../font/Chalet.eot?#iefix) format("embedded-opentype"),
+		url(../font/chalet.woff) format("woff"),
+		url(../font/Chalet.ttf) format("truetype"),
+		url(../font/chalet.svg#Chalet) format("svg");
+
+}*/
+
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+/**converter fonts*/
+
+/**
+http://www.freefontconverter.com/
+http://onlinefontconverter.com/
+*/
+*{
+padding: 0px 0px;
+margin: 0px 0px;
+}
+
+h1{
+	display:none;	
+}
+a:link,a:hover,a:visited,a:active  {
+	text-decoration:none;
+	color:rgb(255,255,255);
+}
 body {
-	background-color:#651816;
+	background-color:rgb(163,30,26);/**/
+	background-image:url(../img/fondo.png);
+	background-repeat:repeat-x;
 }
 
-.contenedorGeneral{
-	
-	overflow:hidden;
-	width:960px;
-	margin:auto;
+
+/**
+http://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/
+http://www.ehow.com/info_12229897_overflow-hidden-not-working-html5-css.html
+http://stackoverflow.com/questions/2570972/css-font-border
+http://reeddesign.co.uk/test/points-pixels.html
+http://border-radius.com/
+
+http://wowslider.com/jquery-slideshow-flat-slices.html
+
+*/
+img{
+	border:none;
+	padding:0;
+	margin:0;
 }
 
-.encabezado{
-	background: url(../img/botones/fondocarne.jpg);
+/******* M E N U *****/
+nav{
+	/*margin:300px 0 0 0;*/
+	height:96px;
+	
+	/*border:rgb(0,0,0);
+	border-style:double;/**/
 	
 	
-}
-
-.contenido{
-	background:  url(../img/botones/fondoblanco.png);
-	padding-bottom: 500px;
-	margin-top: 15px;
-	margin-left: 80px;
-	margin-right: 80px;
-}
-.menu{
-	
-	background:  url(../img/botones/fondocarne.jpg);
-	height: 55px;
-	margin-left: -60px;
-	margin-right: -60px;
-	
-	
-	}
-	
-	.menu li {/*aqui se agrego el padding para mover la imagen del boton*/
-	
-	float: left;
-	height: 50px;
-	width: 15px;
-	margin-left:60px;
-	margin-right:60px;
-	padding-left:70px;
+	background: #dac1bf; /* Old browsers */
+	background: -moz-linear-gradient(left,  #dac1bf 0%, #d5b090 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#dac1bf), color-stop(100%,#d5b090)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #dac1bf 0%,#d5b090 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #dac1bf 0%,#d5b090 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #dac1bf 0%,#d5b090 100%); /* IE10+ */
+	background: linear-gradient(to right,  #dac1bf 0%,#d5b090 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dac1bf', endColorstr='#d5b090',GradientType=1 ); /* IE6-9 */
+	text-align:center;
 	list-style:none;
+	
+	font-family:"snap";
+	font-size:18px;
+	/*color:rgb(255,255,255);*/
+	/*text-shadow: 2px 1px 1px rgba(0,0,0,1);/* 4 valores (1.- distancia en el eje x) (2.- distancia en el eje Y) (3.- el blur o nivel de desenfoque)   (4.- el color de la sombra )*/
+	-moz-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+	-o-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+	-webkit-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 5px -1px black;
+
+
+	
+}
+div .menuitem {
+ /* -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2.00px; 
+  */
+}
+nav li{
+	margin:0 30px;
+	display:inline;		
+}
+nav li:hover{
+/*background-color:#CC3;/**/
+}
+nav a{
+    display:inline-block;
+    padding:0 10px;
+}
+#conocenos{
+	
+/*	height: 96px;
+	width: 142px;
+	/*background-image: url(../img/conocenos.png);/**/
+	/*background-position: center bottom;/**/
+	/*background-repeat:no-repeat;/**/
+	
+	filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
+	
+}
+
+#menuu{
+	filter: Shadow(Color=white, Direction=130, Strength=3); /* IE Proprietary Filter*/
+}
+
+#contactanos{
+	filter: Shadow(Color=white, Direction=130, Strength=3); /* IE Proprietary Filter*/
+}
+
+#sugerencias{
+	filter: Shadow(Color=white, Direction=130, Strength=3); /* IE Proprietary Filter*/
+}
+.menuitem{
+	/*visibility: hidden;/**/
+}
+.menuitem:hover{
+	background:rgb(116,165,188);
+	border-color:rgb(255,255,255);
+	border-style:solid;
+	border-radius:10px 10px;
+	min-width:150px;
+	min-height:100px;
+	padding:10px 0;
 }
 
 
 
-.conocenos{
-	height: 50px;
-	width: 120px;
-	background-image: url(../img/botones/conocenos.gif);
-	background-position: center bottom;
-	display: block;
-	text-indent:-9999px;
-	overflow: hidden;
-	padding-left:30px;
-	margin-left: 70px;	
-	}
+/******* HEADER  *****/
+header{
+	width:1024px;
+	height:350px;
+	text-align:center;
+	margin:0px auto;
+}
+#logo,#contenedorh,#eslogan,#btnpedido{
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: top;
+}
+#logo{
 	
-.menuu{
-	height: 50px;
-	width: 180px;
-	background-image:url(../img/botones/menu.gif);
-	background-position: center bottom;
-	display: block;
-	text-indent:-9999px;
-	overflow: hidden;
-	margin-left: 40px;
-	}
-	
-.contactanos{
-	height: 48px;
-	width: 110px;
-	background-image: url(../img/botones/contactanos.gif);
-	background-position: center bottom;
-	display: block;
-	text-indent:-9999px;
-	overflow: hidden;
-	margin-left: 50px;
-	
-	}
-	
-.sugerencias{
-	height: 50px;
-	width: 226px;
-	display: block;
-	text-indent:-9999px;
-	overflow: hidden;
-	margin-right:330px;
-	background:  url(../img/botones/sugerencia.gif) no-repeat center bottom;	
-	}
-	
-.sugerencias:hover, .conocenos:hover, .menuu:hover, .contactanos:hover{
-	background-position: center -1px;
-	}
+	padding:93px 0 0 0;
+}
+#contenedorh{
+	/*border-style:dashed;/**/
+}
 
-.contactanos:hover{
-	height: 65px;
-	width: 120px;
-	top:460px;
+#eslogan{
+	color:white;	
+	font-family: Helvetica;
+	font-style: italic;
+	font-weight:bolder;
+	font-size: 24px; /*=> 18ptos http://reeddesign.co.uk/test/points-pixels.html*/
+	padding:0 150px 0 0;	
+}
+#btnpedido{
+	background-image:url(../img/btnpedido.png);
+	background-repeat:repeat-x;
+	color:white;	
+	font-family:"snap";
+	font-size:18px;
+	padding:2px 0;
+	height:36px;
+	width:216px;	
+}
+#contentslider{
+	
+	background-color: #D3D3D3;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;	
+	box-shadow: 1px 1px 4px rgb(0,0,0);
+	/*opacity: 0.4;*/
+	height:255px;
+	width:835px;
 	
 }
 
-.conocenos:hover{
-	height: 65px;
-	width: 120px;
-	top:700px;
-}
+/************ BODY O C U E R P O *******/
 
-.menuu:hover{
-	height: 65px;
-	width: 160px;
-	top:700px;
-}
 
-.sugerencias:hover{
-	height: 65px;
-	width: 220px;
-	top:700px;
-}
 
-.titulo .h1{
-	text-align: center;
-	font-family:Snap ITC; 
-	color:#65c8e8;	
-}
 
-.foto{
-		text-align: justify;
-		margin-left: 10px;
-		margin-right:10px;
-		color:white;
-		font-family:Snap ITC; 
-		text-outline: 10px;
-	
-}
-.flotadoizq{
-	float:right;
-	margin-right: 15px;
-	margin-left: 15px;
-	margin-bottom: 10px;
 
-	}
+/************ FOOTER **************/
+

@@ -1,101 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
+    <head>
+        <meta charset="utf-8" />
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+        Remove this if you use the .htaccess -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<title>HTML</title>
-		<link rel="stylesheet" href="styles/background.css" type="text/css">
-		<link rel="stylesheet" href="styles/slide.css" type="text/css">
-		<link rel="stylesheet" href="styles/footer.css" type="text/css">
+        <title>CONO SUR PIZZA </title>
+        <meta name="description" content="" />
+        <meta name="author" content="CONO SUR PIZZAS" />
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        <!-- styles -->
         <link rel="stylesheet" href="styles/style.css" type="text/css">
-		<script type="text/javascript" src="scripts/script.js"></script>
-		
-		<meta name="description" content="" />
-		<meta name="author" content="Junior" />
+        <link rel="stylesheet" href="styles/slidy.css">
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+        <!-- scripts -->
+        <script src="scripts/jquery.min.js"></script>
 
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		
-	</head>
-	
-	<body>
-		<div class="caja">
-			<div class="header">
-				<div class="logo"> </div>
-				<p class="eslogan">Cambiando la forma de Comer Pizza.</p>
-				<div class="pedido">
-					<p class="titulos"><a href="Home.html">Pedido en Línea</a></p>
-				</div>
-				
-				<div id="slide"> </div>
-				<div id="slideshow"> 
-					<ul class="slides">
-				    	<li><img src="img/photos/5.jpg" width="740" height="210" alt="Marsa Alam underawter close up" /></li>
-				    	<li><img src="img/photos/6.jpg" width="740" height="210" alt="Turrimetta Beach - Dawn" /></li>
-				    	<li><img src="img/photos/7.jpg" width="740" height="210" alt="Power Station" /></li>
-						<li><img src="img/photos/8.jpg" width="740" height="210" alt="Colors of Nature" /></li>
-					</ul>
-					<span class="arrow previous"> </span>
-					<span class="arrow next"> </span>
-				</div>
-			</div>
-             <div class="menu"> <!-- inicio div menu -->
-       		 
-       		 <ul class="menu">
-	<li><a href="index.html" class="conocenos">Conocenos</a></li>
-	<li><a href="html/ubicacion-De-Autolavado-El-Carmen.html" class="menuu">Menú</a></li>
-	<li><a href="html/contactanos-Autolavado-El-Carmen.html" class="contactanos">contáctanos</a></li>
-	<li><a href="html/descripcionServiciosproductosDeAutolavadoElCarmen.html" class="sugerencias">sugerencias</a></li>
-			</ul>
-    	
-       		 	
-       		 </div><!-- Fin div menu -->
-			<div class="fondoleft"> </div>
-			<div class="fondoright"> </div>
-			<footer>
-				<div class="caja_fotos_izq">
-					<div class="imagen"> </div>
+        <script src="scripts/slidy.js"></script>
+       
+    </head>
 
-					<div class="imagen"> </div>
+    <body>
+        <h1>CONO SUR PIZZAS</h1>
 
-					<div class="imagen"> </div>
-	
-					<div class="imagen"> </div>
-				</div>
-					
-				<div class="caja_texto_der">
-					<div class="caja_redes">
-						<p><a class="twt" href="#"></a> <a class="texto_redes" href="#">Síguenos en Twitter</a></p>
-						<p><a class="face" href="#"></a> <a class="texto_redes" href="#">Síguenos en Facebook</a></p>
-					</div>
-					<ul class="nav">
-						<li><a href="#">Conócenos</a></li>
-						<li><a href="#">Menú</a></li>
-						<li><a href="#">Contáctanos</a></li>
-						<li><a href="#">Sugerencias</a></li>
-					</ul>
-					<p class="copyright">© Sur Pizza's-2012 Derechos Reservados</p> 	
-				</div>		
-			</footer>
-		</div>
-		
-		
-		 
-	
-		
-		
-		
-		
-	</body>	
-	
-	
+        <div>
+            <header>
+                <div id="logo">
+                    <img src="img/logo2.png" width="169" height="169" alt="LOGO CONO SUR"/>
+                </div>
+                <div id="contenedorh">
+                    <div id="contenedorh2">
+                        <div id="eslogan">Cambiando la forma de comer Pizza</div>
+                        <div id="btnpedido">
+                            Pedido en línea
+                        </div>
+                    </div>
+                    <div id="contentslider" class="slidyContainer">
+                        <div id="slider"  class="slidySlides">
+                            <figure class="slidyCurrent">
+                                <!-- Your context goes here -->
+                                <img  alt="Uyuni, Bolivia" src="img/fotos/5.jpg"/>
+                                <!-- Use the figcaption element to add captions -->
+                                <br/>
+                                <figcaption>An Image</figcaption>
+                            </figure>
+                            <figure class="slidyCurrent">
+                                <!-- Your context goes here -->
+                                <img  alt="Uyuni, Bolivia" src="img/fotos/6.jpg"/>
+                                <!-- Use the figcaption element to add captions -->
+                                <br/>
+                                <figcaption>An Image</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" id="conocenos" class="menuitem"><img src="img/btn1.png" alt="conocenos" width="53" height="42"/><div class="menuitem2">Conocénos</div></a></li>
+                    <li><a href="" id="menuu" class="menuitem"><img src="img/btn2.png" alt="menu" height="45" width="50"/><div class="menuitem2">Menú</div></a></li>
+                    <li><a href="" id="contactanos" class="menuitem"><img src="img/btn3.png" alt="contacto" width="81" height="44"/><div class="menuitem2">Contáctanos</div></a></li>
+                    <li><a href="" id="sugerencias" class="menuitem"><img src="img/btn4.png" alt="sugerencias" height="53" width="50"/><div class="menuitem2">Sugerencias</div></a></li>
+                </ul>
+            </nav>
+
+            <div>
+
+            </div>
+
+            <footer>
+                <p>
+                    &copy; Copyright  by ADAMS
+                </p>
+            </footer>
+        </div>
+         <script>
+            $('.slidyContainer').slidy({
+            });
+        </script>
+    </body>
 </html>
