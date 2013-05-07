@@ -65,7 +65,7 @@ img{
 	margin:0;
 }
 
-/******* M E N U *****/
+/*********************************** M E N U ***********************************************/
 nav{
 	/*margin:300px 0 0 0;*/
 	height:96px;
@@ -161,14 +161,14 @@ nav a{
 
 
 
-/******* HEADER  *****/
+/******************************* HEADER  *******************************************/
 header{
 	width:1024px;
 	height:350px;
 	text-align:center;
 	margin:0px auto;
 }
-#logo,#contenedorh,#eslogan,#btnpedido{
+#logo,#contenedorh,#eslogan,#marco{
 	display: inline-block;
 	margin: 0 auto;
 	vertical-align: top;
@@ -194,9 +194,25 @@ header{
 	font-size: 24px; /*=> 18ptos http://reeddesign.co.uk/test/points-pixels.html*/
 	padding:0 150px 0 0;	
 }
+#marco{
+	
+	
+	border: 1px solid;
+	
+	box-shadow: 2px 2px 4px #000000;
+	
+	
+	/*background-color: rgb(255, 255, 255);*/
+	
+	/*border: 10px solid rgb(100, 100, 100); 
+	border: 10px solid rgba(0, 0, 0, 0.3); 
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding; 
+	background-clip: padding-box;/* */
+}
 #btnpedido{
 	background-image:url(../img/btnpedido.png);
-	background-repeat:repeat-x;
+	background-repeat:repeat-x;	
 	color:white;	
 	font-family:"snap";
 	font-size:18px;
@@ -228,15 +244,79 @@ header{
 	width:99%;*/
 }
 
-/************ BODY O C U E R P O *******/
+/***************************** BODY - C U E R P O ***************************************/
 section{
 	height:522px;	
+	width:1024px;	
+	text-align:center;
+	margin:0px auto;
+	
+	
+}
+#fondocontenido{
+background: #c6a3b2; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M2YTNiMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNmEzYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  #c6a3b2 0%, #c6a3b2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c6a3b2), color-stop(100%,#c6a3b2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #c6a3b2 0%,#c6a3b2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #c6a3b2 0%,#c6a3b2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #c6a3b2 0%,#c6a3b2 100%); /* IE10+ */
+background: linear-gradient(to right,  #c6a3b2 0%,#c6a3b2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6a3b2', endColorstr='#c6a3b2',GradientType=1 ); /* IE6-8 */
+	opacity: 0.8;/**/
+	background-color:transparent;
+	width:1024px;
+	height:522px;	
+}
+
+#ctexto,#cfoto{
+	display:inline-block;
+}
+#ctitulo{
+	font-family:"snap";
+	font-size:28px;
+	color:rgb(101,200,232);
+	padding:20px 0;
+	-moz-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+	-o-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+	-webkit-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 5px -1px black;
+	filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
+}
+.tituloart{
+	font-family:"snap";
+	font-size:20px;
+	color:rgb(255,255,255);
+	-moz-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+	-o-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+	-webkit-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 5px -1px black;
+	padding:20px 0;
+	filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
+}
+.contentart{
+	font-family:Arial;
+	font-size:18px;
+	padding:0 2em;
+	text-align:justify;
+	
+}
+
+#ctexto{
+	height:278px;
+	width:560px;	
+}
+
+#cfoto{
+	background-image:url(../img/promocion3.JPG);
+	height:230px;
+	width:360px;
 }
 
 
 
-
-/************ FOOTER **************/
+/************************** FOOTER ***********************************/
 
 footer{
 background: #fffefc; /* Old browsers */
