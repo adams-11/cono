@@ -114,32 +114,40 @@ nav a{
     display:inline-block;
     padding:0 10px;
 }
+#conocenos,#menuu,#contactanos,sugerencias{
+	display:inline-block;
+	background-repeat:no-repeat;	
+	margin:5px 35px;	
+}
 #conocenos{
-	
-/*	height: 96px;
-	width: 142px;
-	/*background-image: url(../img/conocenos.png);/**/
-	/*background-position: center bottom;/**/
-	/*background-repeat:no-repeat;/**/
-	
-	filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
-	
+	background-image:url(../img/btn1.png);	
+	height:42px;
+	width:53px;
 }
 
 #menuu{
-	filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
+	background-image:url(../img/btn2.png);	
+	height:45px;
+	width:50px;
 }
 
 #contactanos{
-	filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
+	background-image:url(../img/btn3.png);	
+	height:44px;
+	width:81px;
 }
 
 #sugerencias{
+	background-image:url(../img/btn4.png);	
+	margin-left:35px;
+	height:53px;
+	width:50px;
+}
+/**internet explorer*/
+.menuitem2{
 	filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
 }
-.menuitem{
-	/*visibility: hidden;/**/
-}
+
 .menuitem:hover{
 	background:rgb(116,165,188);
 	border-color:rgb(255,255,255);
@@ -165,8 +173,13 @@ header{
 	vertical-align: top;
 }
 #logo{
-	
-	padding:93px 0 0 0;
+	background-image: url(../img/logo2.png);
+	background-repeat:no-repeat;
+	height:169px;
+	width:169px;
+	top:94px;
+	position: relative;
+	/*padding:94px 0 0 0;/**/
 }
 #contenedorh{
 	/*border-style:dashed;/**/
