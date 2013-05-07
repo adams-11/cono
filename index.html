@@ -19,11 +19,26 @@
 
         <!-- styles -->
         <link rel="stylesheet" href="styles/style.css" type="text/css">
-        <link rel="stylesheet" href="styles/slidy.css">
+
+
+
+        <!-- Syntax Highlighter -->
+        <link href="styles/shCore.css" rel="stylesheet" type="text/css" />
+        <link href="styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+        <!-- Demo CSS -->
+
+        <link rel="stylesheet" href="styles/flexslider.css" type="text/css" media="screen" />
+        <!-- Modernizr -->
+        <script src="scripts/modernizr.js"></script>
+
 
         <!-- scripts -->
         <script src="scripts/jquery.min.js"></script>
-        <script src="scripts/slidy.js"></script>       
+
+
+
+
+
     </head>
 
     <body>
@@ -39,7 +54,22 @@
                         </div>
                     </div>
                     <div id="contentslider" class="slidyContainer">
-
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="img/fotos/5.jpg" />
+                                </li>
+                                <li>
+                                    <img src="img/fotos/6.jpg" />
+                                </li>
+                                <li>
+                                    <img src="img/fotos/7.jpg" />
+                                </li>
+                                <li>
+                                    <img src="img/fotos/8.jpg" />
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -64,7 +94,7 @@
                                 </article>
                                 <article id="articulo2" class="articulos1">
                                     <div class="tituloart">Misión</div>
-                                    <div class="contentart">Expresar en cada atencion y entrega nuestra adnegada dedicacion a nuestra distinguida clientela</div>
+                                    <div class="contentart">Expresar en cada atencion y entrega, nuestra adnegada dedicacion a nuestra distinguida clientela asegurandoles dia a dia un producto saludable de maxima calidad en sus diferentes presentaciones y a unos excelentes precios.</div>
                                 </article>
                             </div>
                             <div id="cfoto"></div>
@@ -103,8 +133,46 @@
             </footer>
         </div>
         <script>
-            $('.slidyContainer').slidy({
+            // Can also be used with $(document).ready()
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                });
             });
         </script>
+        <!-- jQuery -->
+        <script src="scripts/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')
+        </script>
+
+        <!-- FlexSlider -->
+        <script defer src="scripts/jquery.flexslider.js"></script>
+
+        <script type="text/javascript">
+            $(function(){
+                SyntaxHighlighter.all();
+            });
+            $(window).load(function(){
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    animationLoop: true,
+                    itemWidth: 210,
+                    itemMargin: 5,
+                    start: function(slider){
+                        $('body').removeClass('loading');
+                    }
+                });
+            });
+        </script>
+        <!-- Syntax Highlighter -->
+        <script type="text/javascript" src="scripts/shCore.js"></script>
+        <script type="text/javascript" src="scripts/shBrushXml.js"></script>
+        <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+
+        <!-- Optional FlexSlider Additions -->
+        <script src="scripts/jquery.easing.js"></script>
+        <script src="scripts/jquery.mousewheel.js"></script>
+        <script defer src="scripts/demo.js"></script>
     </body>
 </html>

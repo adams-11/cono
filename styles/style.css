@@ -57,7 +57,7 @@ http://reeddesign.co.uk/test/points-pixels.html
 http://border-radius.com/
 
 http://wowslider.com/jquery-slideshow-flat-slices.html
-
+/*http://www.cvwdesign.com/txp/article/455/transparent-borders-with-css3*/
 */
 img{
 	border:none;
@@ -222,12 +222,18 @@ header{
 }
 #contentslider{
 	
-	background-color: #D3D3D3;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;	
-	box-shadow: 1px 1px 4px rgb(0,0,0);
-	/*opacity: 0.4;*/
+background: #c6a3b2; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M2YTNiMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNmEzYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  #c6a3b2 0%, #c6a3b2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c6a3b2), color-stop(100%,#c6a3b2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #c6a3b2 0%,#c6a3b2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #c6a3b2 0%,#c6a3b2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #c6a3b2 0%,#c6a3b2 100%); /* IE10+ */
+background: linear-gradient(to right,  #c6a3b2 0%,#c6a3b2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6a3b2', endColorstr='#c6a3b2',GradientType=1 ); /* IE6-8 */
+	opacity: 0.8;/**/
+	background-color:transparent;
 	height:255px;
 	width:835px;
 	/*http://www.cvwdesign.com/txp/article/455/transparent-borders-with-css3*/
@@ -239,9 +245,9 @@ header{
 	background-clip: padding-box; */
 }
 #slider{
-	/*padding:7px 7px;;
-	height:99%;
-	width:99%;*/
+	/*padding:7px 7px;;/**/
+	/*height:99%;/**/
+	/*width:99%;/**/
 }
 
 /***************************** BODY - C U E R P O ***************************************/
