@@ -544,7 +544,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2423', end
 	font-weight:bolder;   
     min-width:150px;
     min-height:100px;
-   
+	padding-top:7px;   
+}
+#baropc li:hover{
+	 color:rgb(101,200,232);
+	 text-decoration: underline;
+   /* padding:20px 0;/**/
+    -moz-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+    -o-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+    -webkit-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 5px -1px black;
+    filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
+	
 }
 
 #baropc>ul>li+li {
