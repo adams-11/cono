@@ -68,6 +68,8 @@ http://www.w3schools.com/Css/css_boxmodel.asp
 http://lineadecodigo.com/css/bordes-3d-con-css/
 
 http://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators
+
+http://es.html.net/tutorials/css/lesson15.php
 */
 img{
     border:none;
@@ -616,14 +618,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2423', end
     filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
 }
 #produc1{
-	border-style:dashed;
+	
 	border-color:rgb(153,153,153);
 	background-image:url(../img/fotosproductos/clasico1.png);	
+	background-repeat:no-repeat;
 	height:305px;
 	width:555px;
 	top:30px;
+	left:40px;/**media en mockups =36 -> para redondear*/
+	text-align:left;
 	position:relative;
 }
 
 
+#descprod{
+	font-family:Helvetica;
+	font-size:16px;
+	color:rgb(255,255,255);
+	font-weight:bolder;
+	height:120px;
+	width:320px;
+	position:relative;
+	text-align:justify;
+	padding-left:50px;
+	top:-20px;	
+}
+#btnsclasic{
+	color:rgb(255,255,255);
+	text-align:center;
+	height:60px;
+	width:30ppx;
+	position:relative;
+	font-family:Helvetica;
+	font-size:16px;
+	font-weight:bolder;
+	left:100px;
+	top:-70px;
+}
+.btnprod{
+	display:inline;
+	
+}
 
