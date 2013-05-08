@@ -50,6 +50,8 @@ body {
 
 
 /**
+
+https://developer.mozilla.org/en-US/docs/HTML/HTML5/HTML5_element_list
 http://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/
 http://www.ehow.com/info_12229897_overflow-hidden-not-working-html5-css.html
 http://stackoverflow.com/questions/2570972/css-font-border
@@ -561,12 +563,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2423', end
 
 }/**/
 .divisor{
-   height: 50px;
+   height: 40px;
    width: 1px;
    background-color: #DDD;
    border-right: 2px solid #FFF;
    display:inline;
-   padding: 2px 0px;
+   position:absolute;
 }
 
 
