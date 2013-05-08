@@ -464,23 +464,19 @@ a.texto_redes:visited:after{
     text-align: right;
     margin-right: 2px;
 }
-
-.fleft{
-    width: 449px;
+.fconos{
+	width: 449px;
     height: 504px;
-    position: absolute;
-    top: 850px;
+	position: absolute;
+	top: 850px;
     opacity: .40;
+}
+#fleft{  
     background-image: url(../img/fondo1.png);
 }
 
-.fright{
-    width: 449px;
-    height: 504px;
-    position: absolute;
-    top: 850px;;
+#fright{  
     left: 814px;
-    opacity: .40;
     background-image: url(../img/fondo2.png);
 }
 
