@@ -605,7 +605,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2423', end
    display:inline;
    position:absolute;
 }
-
+#titleopc{
+	
+	color:rgb(121,200,222);
+	font-family:"snap";
+	font-size:28px;
+	position:relative;
+	top: 20px;
+	
+	  -moz-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+    -o-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+    -webkit-text-shadow: 2px 1px 1px rgba(255,255,255,1);/*.5 es 50% de opacidad*/
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 5px -1px black;
+    filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
+}
+#produc1{
+	border-style:dashed;
+	border-color:rgb(153,153,153);
+	background-image:url(../img/fotosproductos/clasico1.png);	
+	height:305px;
+	width:555px;
+	top:30px;
+	position:relative;
+}
 
 
 
