@@ -544,6 +544,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2423', end
 #opciones{
 	height:492px;
 	width:720px;
+	margin:0 auto;
 	text-align:center;
 }
 #baropc{
@@ -618,14 +619,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2423', end
     filter: Shadow(Color=black, Direction=130, Strength=3); /* IE Proprietary Filter*/
 }
 #produc1{
-	
+	margin:0 auto;
 	border-color:rgb(153,153,153);
 	background-image:url(../img/fotosproductos/clasico1.png);	
 	background-repeat:no-repeat;
 	height:305px;
 	width:555px;
 	top:30px;
-	left:40px;/**media en mockups =36 -> para redondear*/
+	/*left:40px;/**media en mockups =36 -> para redondear*/
 	text-align:left;
 	position:relative;
 }
@@ -645,18 +646,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2423', end
 }
 #btnsclasic{
 	color:rgb(255,255,255);
+	margin:0 auto;
 	text-align:center;
 	height:60px;
-	width:30ppx;
+	width:300px;
 	position:relative;
 	font-family:Helvetica;
 	font-size:16px;
 	font-weight:bolder;
+	
 	left:100px;
-	top:-70px;
+	top:-70px;/**/
 }
 .btnprod{
-	display:inline;
+	display:inline;	
+	width:50px;
+
+}
+#btnorden{
+
+}
+#btncomprar{
 	
 }
 
